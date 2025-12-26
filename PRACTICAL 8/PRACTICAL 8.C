@@ -1,0 +1,32 @@
+/*
+    Name: Arya Singh-10287
+    Practical 8 - Q3: Print right angle triangle of stars
+*/
+
+#include <stdio.h>
+
+void printTriangle(int n) {
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++)
+            printf("*");
+        printf("\n");
+    }
+}
+
+int main() {
+    int n;
+    printf("Enter height: ");
+    scanf("%d", &n);
+
+    printTriangle(n);
+
+    /*
+    OUTPUT for n = 4:
+    *
+    **
+    ***
+    ****
+    */
+
+    return 0;
+}
